@@ -35,13 +35,11 @@ return certificates[certHash];
 # Expected Output
 ![Screenshot 2025-04-16 091254](https://github.com/user-attachments/assets/de5d4b62-e608-411e-8404-dedb0c6cdb2a)
 
-```
 1. Ensures authenticity of academic certificates through blockchain’s immutability.  
 2. Prevents forgery and tampering with certificates using cryptographic verification.  
 3. Enables instant, transparent, and trustless verification by employers and institutions.  
 4. Reduces administrative overhead and paperwork in certificate issuance and validation.  
 5. Provides a permanent, decentralized record accessible from anywhere.
-```
 # Result:
 A smart contract on Ethereum ensures secure, tamper-proof, and globally verifiable academic certificates.
 
