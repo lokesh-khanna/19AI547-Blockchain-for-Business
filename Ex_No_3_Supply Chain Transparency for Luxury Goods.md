@@ -1,15 +1,21 @@
+## Name:Dhivya Dharshini B
+## Reg no:212223240031
+## Date:21/4/25
+
 # Aim:
 To develop a smart contract that tracks the supply chain of luxury goods, ensuring authenticity.
+
 # Algorithm:
+Step 1:
 The manufacturer records product creation details on-chain.
 
-
+Step 2:
 The product moves through different supply chain checkpoints.
 
-
+Step 3:
 The ownership of the product can be transferred securely.
 
-
+Step 4:
 Buyers can verify the product’s authenticity.
 
 
@@ -63,7 +69,6 @@ Buyers can check the authenticity before purchasing.
 
 # High-Level Overview:
 Helps prevent counterfeit luxury goods.
-
 
 Teaches real-world supply chain use cases.
 
