@@ -69,8 +69,8 @@ Users can contribute ETH to the campaign.
 If the goal is met, the creator can withdraw funds.
 
 ![image](https://github.com/user-attachments/assets/e7acafd2-9723-4705-b097-2604cea1499c)
+![image](https://github.com/user-attachments/assets/f93fdc04-ab7e-4d3a-85a7-563b27335648)
 
-If the goal is not met, contributors can claim a refund.
 
 
 # High-Level Overview:
