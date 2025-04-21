@@ -1,17 +1,18 @@
 # Experiment 2: Blockchain-Based Crowdfunding (Kickstarter Alternative)
+## Name:Dhivya Dharshini B 
+## Reg No :212223240031
+## Date: 21/04/2025
 ## Aim:
 To create a decentralized crowdfunding platform where donors contribute funds only if the campaign goal is met.
 
 ## Algorithm:
+Step 1:
 A project owner starts a campaign with a funding goal and deadline.
-
-
+Step 2:
 Contributors can send ETH to the campaign.
-
-
+Step 3:
 If the goal is met before the deadline, funds are released to the project owner.
-
-
+Step 4:
 If the goal is not met, contributors can withdraw their funds.
 
 
@@ -80,3 +81,4 @@ Teaches decentralized fundraising.
 Avoids fraud by ensuring funds are only transferred if the goal is met.
 
 # RESULT: 
+Thus, a decentralized crowdfunding platform has been created and successfully executed.
