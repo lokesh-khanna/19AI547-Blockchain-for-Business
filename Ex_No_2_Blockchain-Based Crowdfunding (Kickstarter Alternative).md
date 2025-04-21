@@ -1,5 +1,5 @@
 # Experiment 2: Blockchain-Based Crowdfunding (Kickstarter Alternative)
-## Name   : M Sathish kumar
+## Name   : M SATHISH KUMAR
 ## Reg no : 212222040150
 ## Aim:
 To create a decentralized crowdfunding platform where donors contribute funds only if the campaign goal is met.
