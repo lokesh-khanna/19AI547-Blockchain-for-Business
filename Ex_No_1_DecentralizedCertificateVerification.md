@@ -1,6 +1,7 @@
 ### Experiment 1: Decentralized Certificate Verification
 ## Name: Dhivya Dharshini B
 ## Reg no: 212223240031
+## Date:16/04/2025
 ## Aim:
   To develop a smart contract for issuing and verifying academic certificates on Ethereum, preventing forgery and ensuring authenticity.
 ## Algorithm:
