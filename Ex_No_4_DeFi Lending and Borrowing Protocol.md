@@ -98,3 +98,4 @@ Directly related to DeFi protocols like Aave and Compound.
 
 # RESULT : 
 
+Thus, smart contract that tracks the supply chain of luxury goods, ensuring authenticity has been created and successfully executed.
