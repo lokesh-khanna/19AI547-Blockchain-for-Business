@@ -74,8 +74,11 @@ contract DeFiLending {
 
 ```
 # Expected Output:
+
 Users can deposit ETH and earn interest.
-"C:\Users\admin\Pictures\Screenshots\Screenshot 2025-04-21 161254.png"
+
+![Screenshot 2025-04-21 161254](https://github.com/user-attachments/assets/16b806fc-1b4e-46d0-847a-b4e48102dd92)
+
 
 Users can borrow ETH by providing collateral.
 
