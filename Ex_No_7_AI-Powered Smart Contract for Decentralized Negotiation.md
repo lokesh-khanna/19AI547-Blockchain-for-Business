@@ -1,35 +1,38 @@
 # Experiment 7: AI-Powered Smart Contract for Decentralized Negotiation
+# Name : Dhivya Dharshini B
+# Reg no : 212223240031
 # Aim:
 # To create a smart contract that integrates AI logic for automated negotiation in decentralized commerce. The contract adjusts price and conditions dynamically based on real-time market trends using an on-chain AI model.
 
 # Algorithm:
-## Step 1: AI-Powered Dynamic Pricing
+## Step 1:
+AI-Powered Dynamic Pricing
 Seller lists an item with a minimum price and negotiation range.
 
-
+## Step 2: 
 Buyer submits an offer price.
 
-
+## Step 3:
 AI logic (simulated using Solidity algorithms) evaluates the price based on:
 
-
+## Step 4: 
 Market demand (tracked using on-chain transactions).
 
-
+## Step 5:  
 Historical transaction data.
-
+## Step 6:
 
 Time-based price fluctuations.
 
 
-## Step 2: Smart Contract Counteroffer
+## Step 7: Smart Contract Counteroffer
 The contract automatically generates a counteroffer if the buyer’s price is within the negotiation range.
 
 
 If the buyer accepts, the transaction is executed on-chain.
 
 
-## Step 3: Settlement and Price Learning
+## Step 8: Settlement and Price Learning
 Every completed transaction updates the price learning algorithm to refine future pricing decisions.
 
 
