@@ -1,15 +1,24 @@
+# Ex_No_3_Supply Chain Transparency for Luxury Goods
+
+
+## Name:M Sathish kumar
+## Reg no:212222040150
+## Date:21/4/25
+
 # Aim:
 To develop a smart contract that tracks the supply chain of luxury goods, ensuring authenticity.
+
 # Algorithm:
+Step 1:
 The manufacturer records product creation details on-chain.
 
-
+Step 2:
 The product moves through different supply chain checkpoints.
 
-
+Step 3:
 The ownership of the product can be transferred securely.
 
-
+Step 4:
 Buyers can verify the product’s authenticity.
 
 
@@ -50,19 +59,22 @@ contract LuxurySupplyChain {
 ```
 # Expected Output:
 A luxury good (e.g., a Rolex watch) is registered on-chain.
+![image](https://github.com/user-attachments/assets/679b717e-617b-4b3d-bfe3-49d78ab10ef1)
 
 
 Ownership is transferred at every checkpoint.
 
+![image](https://github.com/user-attachments/assets/735ae731-d59c-44a2-a575-8b97dc5911e2)
 
 Buyers can check the authenticity before purchasing.
 
+![image](https://github.com/user-attachments/assets/98b4bb3e-4bb3-4e64-8f68-a0275e91e4e9)
 
 # High-Level Overview:
 Helps prevent counterfeit luxury goods.
-
 
 Teaches real-world supply chain use cases.
 
 # RESULT : 
 
+Thus, smart contract that tracks the supply chain of luxury goods, ensuring authenticity has been created and successfully executed.
