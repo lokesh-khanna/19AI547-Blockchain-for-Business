@@ -1,4 +1,9 @@
 # Experiment 4: DeFi Lending and Borrowing Protocol
+## Name:M Sathish kumar
+## Reg no:212222040150
+## Date:23/4/25
+
+
 # Aim:
 To build a decentralized lending protocol where users can deposit assets to earn interest and borrow assets by providing collateral. This experiment introduces concepts like overcollateralization, liquidity pools, and interest accrual in DeFi.
 
@@ -74,24 +79,23 @@ contract DeFiLending {
 
 ```
 # Expected Output:
+
 Users can deposit ETH and earn interest.
+
+![Screenshot 2025-04-21 161254](https://github.com/user-attachments/assets/16b806fc-1b4e-46d0-847a-b4e48102dd92)
 
 
 Users can borrow ETH by providing collateral.
 
-
-If collateral < 150% of borrowed amount, liquidators can seize the collateral.
+![image](https://github.com/user-attachments/assets/2e68a1f8-6cba-41a1-b933-3c1c5268a10a)
 
 
 
 # High-Level Overview:
 Teaches key DeFi concepts: lending, borrowing, collateral, liquidation.
-
-
 Introduces risk management: overcollateralization and liquidation.
-
-
 Directly related to DeFi protocols like Aave and Compound.
 
 # RESULT : 
 
+Thus,DeFi Lending and Borrowing Protocol has been created and successfully executed.
