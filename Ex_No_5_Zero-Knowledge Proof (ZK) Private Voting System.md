@@ -1,82 +1,101 @@
-# Experiment 5: Zero-Knowledge Proof (ZK) Private Voting System
-## Name:Dhivya Dharshini B
-## Reg no:212223240031
+# Experiment 4: DeFi Lending and Borrowing Protocol
+## Name:M Sathish kumar
+## Reg no:212222040150
 ## Date:23/4/25
+
+
 # Aim:
-To implement a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs). This ensures that votes are counted fairly without revealing who voted for whom.
+To build a decentralized lending protocol where users can deposit assets to earn interest and borrow assets by providing collateral. This experiment introduces concepts like overcollateralization, liquidity pools, and interest accrual in DeFi.
 
 # Algorithm:
-Step 1:
-Voter Registration
-Each voter generates a secret vote key and submits a commitment (hashed vote) to the contract.
+Step 1: Setup Lending and Borrowing Mechanism
+Users deposit ETH into the contract as liquidity.
 
 
-Step 2: Voting Process
-Voters submit their votes privately using a hash, without revealing their choice.
+Depositors receive interest based on their deposits.
 
 
-Step 3: ZK Verification
-The contract verifies if a vote belongs to a registered voter but does not reveal the actual vote.
+Borrowers can borrow ETH but must provide collateral (e.g., 150% of the borrowed amount).
 
 
-Step 4: Vote Counting
-Once voting ends, the contract reveals the final tally without linking votes to individuals.
-# Program:
+Interest on borrowed funds is calculated dynamically based on utilization rate.
+
+
+Step 2: Implement Overcollateralization
+If a borrower’s collateral value drops below a certain liquidation threshold, their collateral is liquidated to repay the debt.
+
+
+Step 3: Allow Liquidation
+If collateral < liquidation threshold, liquidators can repay the borrower's debt and claim their collateral at a discount.
+
+
+
+Program:
 ```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-contract ZKVoting {
-    struct Voter {
-        bool registered;
-        bytes32 voteCommitment;
+contract DeFiLending {
+    address public owner;
+    uint256 public interestRate = 5; // 5% interest per cycle
+    uint256 public liquidationThreshold = 150; // 150% collateralization
+    mapping(address => uint256) public deposits;
+    mapping(address => uint256) public borrowed;
+    mapping(address => uint256) public collateral;
+
+    event Deposited(address indexed user, uint256 amount);
+    event Borrowed(address indexed user, uint256 amount, uint256 collateral);
+    event Liquidated(address indexed user, uint256 debtRepaid, uint256 collateralSeized);
+
+    constructor() {
+        owner = msg.sender;
     }
 
-    mapping(address => Voter) public voters;
-    uint256 public votesForA;
-    uint256 public votesForB;
-
-    event VoteCommitted(address voter, bytes32 commitment);
-    event VoteRevealed(address voter, uint256 choice);
-
-    function registerVoter(bytes32 commitment) public {
-        require(!voters[msg.sender].registered, "Already registered");
-        voters[msg.sender] = Voter(true, commitment);
-        emit VoteCommitted(msg.sender, commitment);
+    function deposit() public payable {
+        require(msg.value > 0, "Deposit must be greater than zero");
+        deposits[msg.sender] += msg.value;
+        emit Deposited(msg.sender, msg.value);
     }
 
-    function revealVote(string memory secret, uint256 choice) public {
-        require(voters[msg.sender].registered, "Not registered");
-        require(keccak256(abi.encodePacked(secret, choice)) == voters[msg.sender].voteCommitment, "Invalid proof");
+    function borrow(uint256 amount) public payable {
+        require(msg.value >= (amount * liquidationThreshold) / 100, "Not enough collateral");
+        borrowed[msg.sender] += amount;
+        collateral[msg.sender] += msg.value;
+        payable(msg.sender).transfer(amount);
+        emit Borrowed(msg.sender, amount, msg.value);
+    }
 
-        if (choice == 1) votesForA++;
-        if (choice == 2) votesForB++;
+    function liquidate(address borrower) public {
+        require(collateral[borrower] < (borrowed[borrower] * liquidationThreshold) / 100, "Not eligible for liquidation");
+        uint256 debt = borrowed[borrower];
+        uint256 seizedCollateral = collateral[borrower];
 
-        emit VoteRevealed(msg.sender, choice);
+        borrowed[borrower] = 0;
+        collateral[borrower] = 0;
+        payable(msg.sender).transfer(seizedCollateral);
+        emit Liquidated(borrower, debt, seizedCollateral);
     }
 }
 
 ```
 # Expected Output:
-Voters commit their votes privately.
 
-![image](https://github.com/user-attachments/assets/2b2fa281-d897-495c-b24a-e5aebe044246)
+Users can deposit ETH and earn interest.
 
-When revealed, the contract verifies correctness but keeps votes anonymous.
-![image](https://github.com/user-attachments/assets/284f2ba8-5778-48c7-91a4-be6602b15c10)
+![Screenshot 2025-04-21 161254](https://github.com/user-attachments/assets/16b806fc-1b4e-46d0-847a-b4e48102dd92)
 
 
-Final result is publicly verifiable without exposing individual votes.
+Users can borrow ETH by providing collateral.
 
-![image](https://github.com/user-attachments/assets/0ccb9782-4257-4e42-b34f-c16f792a72e1)
+![image](https://github.com/user-attachments/assets/2e68a1f8-6cba-41a1-b933-3c1c5268a10a)
+
 
 
 # High-Level Overview:
-Uses ZKPs to ensure anonymous and fair elections.
+Teaches key DeFi concepts: lending, borrowing, collateral, liquidation.
+Introduces risk management: overcollateralization and liquidation.
+Directly related to DeFi protocols like Aave and Compound.
 
-Prevents vote tampering while maintaining voter privacy.
+# RESULT : 
 
-Mimics real-world ZK voting applications in governance and DAOs.
-
-# RESULT: 
-Thus,Zero-Knowledge Proof (ZK) Private Voting System has been created and successfully executed.
+Thus,DeFi Lending and Borrowing Protocol has been created and successfully executed.
