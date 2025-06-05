@@ -1,7 +1,7 @@
 
 ### Experiment 1: Decentralized Certificate Verification
-## Name: M SATHISH KUMAR
-## Reg no: 212222040150
+## Name: R lokesh khanna
+## Reg no: 212222040088
 ## Aim:
   To develop a smart contract for issuing and verifying academic certificates on Ethereum, preventing forgery and ensuring authenticity.
 ## Algorithm:
