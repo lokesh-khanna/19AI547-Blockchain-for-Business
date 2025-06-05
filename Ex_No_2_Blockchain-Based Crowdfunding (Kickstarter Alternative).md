@@ -1,6 +1,6 @@
 # Experiment 2: Blockchain-Based Crowdfunding (Kickstarter Alternative)
-## Name   : M SATHISH KUMAR
-## Reg no : 212222040150
+## Name   : LOKESH KHANNA R
+## Reg no : 212222040088
 ## Aim:
 To create a decentralized crowdfunding platform where donors contribute funds only if the campaign goal is met.
 
