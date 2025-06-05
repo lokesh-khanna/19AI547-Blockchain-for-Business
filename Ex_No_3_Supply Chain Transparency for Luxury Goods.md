@@ -1,8 +1,8 @@
 # Ex_No_3_Supply Chain Transparency for Luxury Goods
 
 
-## Name:M Sathish kumar
-## Reg no:212222040150
+## Name:LOKESH KHANNA R
+## Reg no:212222040088
 ## Date:21/4/25
 
 # Aim:
