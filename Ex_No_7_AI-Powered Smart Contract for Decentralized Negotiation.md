@@ -1,6 +1,6 @@
 # Experiment 7: AI-Powered Smart Contract for Decentralized Negotiation
-# Name : M sathish kumar
-# Reg no : 212222040150
+# Name : LOKESH KHANNA R
+# Reg no : 212222040088
 # Aim:
 # To create a smart contract that integrates AI logic for automated negotiation in decentralized commerce. The contract adjusts price and conditions dynamically based on real-time market trends using an on-chain AI model.
 
