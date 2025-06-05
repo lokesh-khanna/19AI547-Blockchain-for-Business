@@ -1,6 +1,6 @@
 # Experiment 5: Zero-Knowledge Proof (ZK) Private Voting System
-## Name: M Sathish kumar
-## Reg no: 212222040150
+## Name: LOKESH KHANNA R
+## Reg no: 212222040088
 ## Date:23/4/25
 # Aim:
 To implement a fully private and transparent voting system using Zero-Knowledge Proofs (ZKPs). This ensures that votes are counted fairly without revealing who voted for whom.
