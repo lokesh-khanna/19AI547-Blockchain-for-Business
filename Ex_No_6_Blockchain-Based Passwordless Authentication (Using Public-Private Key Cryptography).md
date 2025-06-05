@@ -1,6 +1,6 @@
 # Experiment 6: Blockchain-Based Passwordless Authentication (Using Public-Private Key Cryptography)
-## Name:M Sathish kumar
-## Reg no:212222040150
+## Name:LOKESH KHANNA R
+## Reg no:212222040088
 ## Date:23/4/25
 
 
