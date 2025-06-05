@@ -1,6 +1,6 @@
 # Experiment 8: Post-Quantum Blockchain Wallet with Lattice-Based Cryptography
-# Name: M Sathish kumar
-# Reg no: 212222040150
+# Name: LOKESH KHANNA R
+# Reg no: 212222040088
 # Aim:
 To create a quantum-resistant wallet using lattice-based cryptography instead of traditional ECDSA, ensuring that future quantum computers cannot break private keys.
 
